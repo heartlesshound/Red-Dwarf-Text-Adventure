@@ -1,0 +1,40 @@
+Listers Story
+
+HOLLY: Time to wake up Dave
+
+Wakes up in Diesel deck 2.
+	"You wake up with the hangover from hell to the white noise of engines humming. It is very dark but you are sure you are still on RED DWARF
+	
+	To view a list of available commands and how to use them type Help. If you wish to ask Holly something, simply begin your question with Holly. For example try typing Holly Where am I and hit the return key."
+	
+	Acceptable Input (AI):
+		Basic Commands
+			Look around - 
+				Lights Off[standard answer [It's dark, what are you expecting to see?]
+				Lights On [conditional [DESC_RD_DD2_L]
+			Pick up - 
+				[standard answer [What am I trying to pick up?]] 
+				[conditional[I can't see anything.]]
+			Pick Up [something] - 
+				[conditional [I can't see that]]
+			Walk left - 
+				[standard answer [I don't want to do that right now.]]
+				[condition [It's too dark]]
+			Walk right - 
+				[standard answer [I don't want to do that right now.]] [condition [It's too dark]]
+			Use lights - 
+				[standard answer [Holly deals with the ship systems]]
+		Holly Commands		
+			Holly Where I am.
+				Holly: If you turned the lights on you'd be able to see Dave
+			Holly turn the lights on.
+				[standard answer [Okay Dave]]
+				[condition [(run DESC_RD_DD2_L)]
+				
+				DESC_RD_DD2_L: #Description of Diesel Deck 2 after Lights on
+				
+				You look around and realise you are in the diesel decks. You are sat on the floor leaning against one of the cylinders which, despite the fact you can hear the engines going, does not appear to be moving. To your left a bulkhead leads to the Diesel Deck offices.
+
+	
+	Door to left goes to Diesel deck 1
+	
